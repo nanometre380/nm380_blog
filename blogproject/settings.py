@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '0hp50tb#oh29j8au#_@ugr!ohzam(t
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUT = True
-DEBUG = bool (os.envirion.get('DJANGO_DEBUG', True))
+DEBUG = bool (os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = []
 
