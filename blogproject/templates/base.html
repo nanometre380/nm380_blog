@@ -58,7 +58,7 @@
             <a class="dropdown-item" href="{% url 'signup' %}" style="font-family: 'S-CoreDream-2ExtraLight';">Sign up</a>
             <a class="dropdown-item" href="{% url 'login' %}" style="font-family: 'S-CoreDream-2ExtraLight';">Login</a>
             <a class="dropdown-item" href="javascript:{document.getElementById('logout').submit()}">Logout</a>
-                            <form id="logout" method="POST" action="">
+                            <form id="logout" method="POST" action="{% url 'logout' %}">
                                 {% csrf_token %} <input type="hidden" />
                             </form>
             <!--<a class="dropdown-item" href="{% url 'logout' %}" style="font-family: 'S-CoreDream-2ExtraLight';">Logout</a>-->
